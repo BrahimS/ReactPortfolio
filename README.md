@@ -14,7 +14,7 @@ This is a kind of personal portfolio website. it's made using technologies like 
 ## Caption
 ![](http://brahimsourny.com/caption.png)
 
-### install
+### Install
 ```
 I used yarn to install my packages and run scripts but npm will also work.
 
