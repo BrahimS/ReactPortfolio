@@ -2,7 +2,7 @@
 // Manu Component
 //=================
 
-// @flow 
+// @flow
 import React from 'react';
 import NLink from './NLink';
 
@@ -15,7 +15,6 @@ class Menu extends React.Component {
 
           <ul className="nav">
             <il className="nav_item"><NLink to="/">About</NLink></il>
-            <il className="nav_item"><NLink to="Projects">Projects</NLink></il>
             <il className="nav_item"><NLink to="WebExp">Side Projects</NLink></il>
             <il className="nav_item"><NLink to="Contact">Contact</NLink></il>
           </ul>
