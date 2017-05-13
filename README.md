@@ -1,13 +1,13 @@
 # React Portfolio
-This is a kind of personal portfolio website. it's made using technologies like :
+This is a customizable portfolio website. it's made using technologies like :
 * Reactjs
 * React-router
-* Webpack
+* Webpack (based on react-create-app configuration)
 * Babel
 * Flow
 * ES6
 * CSS
-* RWD
+* Responsive web design
 
  Please have a look at the code and feel free to modify it or use it if you wish.
 
@@ -27,4 +27,4 @@ I used yarn to install my packages and run scripts but npm will also work.
 ### Production
 
 ```
- $ yarn build
+$ yarn build
