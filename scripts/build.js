@@ -1,10 +1,5 @@
 // Do this as the first thing so that any code reading it knows the right env.
 process.env.NODE_ENV = 'production';
-
-// Load environment variables from .env file. Suppress warnings using silent
-// if this file is missing. dotenv will never modify any environment variables
-// that have already been set.
-// https://github.com/motdotla/dotenv
 require('dotenv').config({silent: true});
 
 var chalk = require('chalk');
@@ -20,21 +15,15 @@ var checkRequiredFiles = require('react-dev-utils/checkRequiredFiles');
 var recursive = require('recursive-readdir');
 var stripAnsi = require('strip-ansi');
 
-// Warn and crash if required files are missing
 if (!checkRequiredFiles([paths.appHtml, paths.appIndexJs])) {
   process.exit(1);
 }
-
-// Input: /User/dan/app/build/static/js/main.82be8.js
-// Output: /static/js/main.js
 function removeFileNameHash(fileName) {
   return fileName
     .replace(paths.appBuild, '')
     .replace(/\/?(.*)(\.\w+)(\.js|\.css)/, (match, p1, p2, p3) => p1 + p3);
 }
 
-// Input: 1024, 2048
-// Output: "(+1 KB)"
 function getDifferenceLabel(currentSize, previousSize) {
   var FIFTY_KILOBYTES = 1024 * 50;
   var difference = currentSize - previousSize;
@@ -50,8 +39,6 @@ function getDifferenceLabel(currentSize, previousSize) {
   }
 }
 
-// First, read the current file sizes in build directory.
-// This lets us display how much they changed later.
 recursive(paths.appBuild, (err, fileNames) => {
   var previousSizeMap = (fileNames || [])
     .filter(fileName => /\.(js|css)$/.test(fileName))
@@ -62,8 +49,7 @@ recursive(paths.appBuild, (err, fileNames) => {
       return memo;
     }, {});
 
-  // Remove all content but keep the directory so that
-  // if you're in it, you don't end up in Trash
+
   rimrafSync(paths.appBuild + '/*');
 
   // Start the webpack build
