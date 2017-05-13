@@ -31,7 +31,7 @@ class ContactForm extends React.Component {
 }
   render() {
     return (
-      <div>
+      <section>
       <section className="brahim_info">
         Your Name <br />
         <span>Phone:</span> your phone <br />
@@ -52,7 +52,7 @@ class ContactForm extends React.Component {
           <p> Please fill all the fields!</p>
         </div>
       </div>
-      </div>
+      </section>
     );
   }
 }

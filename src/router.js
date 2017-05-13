@@ -13,8 +13,6 @@ import WebExp from './components/projects/WebExp';
 import Contact from './components/contact/Contact';
 import NotFound from './components/notfound/NotFound';
 
-
-
 // Routes
 const Routes = (
   <Router history={browserHistory}>

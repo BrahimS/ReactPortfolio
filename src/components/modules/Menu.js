@@ -9,7 +9,7 @@ import NLink from './NLink';
 class Menu extends React.Component {
   render() {
     return (
-      <div>
+      <section>
 
         <nav className="navbar" role="navigation">
 
@@ -19,7 +19,7 @@ class Menu extends React.Component {
             <il className="nav_item"><NLink to="Contact">Contact</NLink></il>
           </ul>
         </nav>
-      </div>
+      </section>
     );
   }
 }

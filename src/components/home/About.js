@@ -22,7 +22,7 @@ class About extends React.Component {
   }
   render() {
     return (
-        <div className="wrapper slide_up ">
+        <section className="wrapper slide_up ">
           <section className="grid_col__12 content_margin">
           <h1 className="headline_primary"> { this.state.title }</h1>
             <span className="sub_title ">{ this.state.subTitle }</span>
@@ -34,7 +34,7 @@ class About extends React.Component {
           <section>
             <Footer />
           </section>
-        </div>
+        </section>
     );
   }
 }

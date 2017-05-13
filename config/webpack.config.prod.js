@@ -29,9 +29,6 @@ var publicPath = ensureSlash(homepagePathname, true);
 var publicUrl = ensureSlash(homepagePathname, false);
 // Get environment variables to inject into our app.
 var env = getClientEnvironment(publicUrl);
-
-// Assert this just to be safe.
-// Development builds of React are slow and not intended for production.
 if (env['process.env'].NODE_ENV !== '"production"') {
   throw new Error('Production builds must have NODE_ENV=production.');
 }
@@ -42,7 +39,6 @@ module.exports = {
   bail: true,
 
   devtool: 'source-map',
-  // In production, we only want to load the polyfills and the app code.
   entry: [
     require.resolve('./polyfills'),
     paths.appIndexJs
@@ -100,7 +96,7 @@ module.exports = {
         test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
         loader: 'file',
         query: {
-          name: 'static/media/[name].[hash:4].[ext]'
+          name: 'static/media/[name].[hash:8].[ext]'
         }
       },
 
