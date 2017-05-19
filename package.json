@@ -1,6 +1,7 @@
 {
   "name": "reactPorfolio",
   "version": "0.1.0",
+  "author": "Brahim sourny",
   "private": true,
   "devDependencies": {
     "autoprefixer": "6.5.1",
