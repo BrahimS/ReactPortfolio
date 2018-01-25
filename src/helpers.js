@@ -1,12 +1,20 @@
-// @flow 
+// @flow
 const isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
 const isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+const isfireFox = /Mozilla/.test(navigator.userAgent);
+const isMs = 'msAnimation' in document.documentElement.style;
+
 
 if (isChrome) {
-  alert("You are using Chrome!");
+  console.log("You are using Chrome!");
 } else if (isSafari) {
-  alert("You are using Safari!");
-} else {
-  const btnWidget = document.querySelector('.project_btn');
-  btnWidget.style.visibility = 'hidden';
+  console.log("You are using Safari!");
 }
+else if (isfireFox){
+  console.log("You are using FireFox!");
+} else if (isMs) {
+ console.log('You are using ie!');
+} else {
+  console.log('i do not know');
+}
+

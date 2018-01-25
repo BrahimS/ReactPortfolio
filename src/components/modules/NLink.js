@@ -1,14 +1,11 @@
-
 //=================
 // Navlink Component
 //=================
 
-// @flow 
-import React from 'react';
-import { Link } from 'react-router';
+// @flow
+import React from "react";
+import { Link } from "react-router";
 
-const NLink = (props) => (
-  <Link {...props} activeClassName="active" />
-);
+const NLink = props => <Link {...props} activeClassName="active" />;
 
 export default NLink;

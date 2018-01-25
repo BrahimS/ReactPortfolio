@@ -3,15 +3,15 @@
 =================*/
 
 // @flow
-import React from 'react';
-import { Router, Route, browserHistory} from 'react-router';
+import React from "react";
+import { Router, Route, browserHistory } from "react-router";
 
 // Custom Components
-import App from './components/App';
-import About from './components/home/About';
-import WebExp from './components/projects/WebExp';
-import Contact from './components/contact/Contact';
-import NotFound from './components/notfound/NotFound';
+import App from "./components/App";
+import About from "./components/home/About";
+import WebExp from "./components/projects/WebExp";
+import Contact from "./components/contact/Contact";
+import NotFound from "./components/notfound/NotFound";
 
 // Routes
 const Routes = (
