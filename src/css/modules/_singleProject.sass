@@ -1,0 +1,61 @@
+.wrapper
+  margin-top: em(115.2px)
+.image_container
+  @extend %hero1
+  margin-bottom: em(50px)
+  background-size: contain
+  width: 100%
+  @include mediaQ(small)
+    width: 100%
+    height: em(195px)
+  @include mediaQ(medium)
+    width: 100%
+
+.imageProject1
+  @extend %imageProject1
+
+.imageProject2
+  @extend %imageProject2
+  margin: em(50px) 0
+  @include mediaQ(small)
+    display: none
+
+.image_result
+  @extend %imageProject3
+  background-size: contain
+  float: left
+  @include mediaQ(small)
+    width: 100%
+    height: em(171px)
+    margin: 5% em(0px) em(0px) em(-10px)
+  @include mediaQ(medium)
+    width: 100%
+    margin: em(5px) em(0px) em(0px) em(-32px)
+  @include mediaQ(large)
+    width: 100%
+    margin: em(50px) em(0px) em(0px) em(5px)
+
+
+.navigation_arrows
+  display: block
+  position: absolute
+  left: 45%
+  margin: em(5px) 0
+  @include mediaQ(small)
+    left: 35%
+  @include mediaQ(large)
+
+
+.fleche_next
+  @extend %arrow
+  margin-left: em(20px)
+
+.fleche_top
+  @extend %arrow
+  float: right
+  margin-right: -4%
+  transform: rotate(-90deg)
+
+.fleche_previous
+  @extend %arrow
+  transform: rotate(-180deg)

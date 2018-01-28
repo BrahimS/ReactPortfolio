@@ -1,0 +1,15 @@
+// Import if Google Fonts is defined
+@if variable-exists(font_url__google1)
+  @import url($font_url__google1)
+
+@if variable-exists(font_url__google2)
+  @import url($font_url__google2)
+
+// Calculate em values
+@function em($target, $context: $browser-context)
+	@return ($target / $context) * 1em
+
+// Set the "context" width for the grid
+@function g_context($g_col_width, $g_col_count, $g_gutter_width)
+  $g_context: ($g_col_width * $g_col_count) + ($g_gutter_width * ($g_col_count - 1))
+  @return $g_context

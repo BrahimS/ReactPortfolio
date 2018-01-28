@@ -1,0 +1,12 @@
+.is_displayed__mobile
+  @include mediaQ(small)
+    display: block
+    right: em(50px)
+
+
+    @at-root (with: media)
+      .is_hidden__mobile
+        display: none
+
+  @include mediaQ(medium)
+    display: none

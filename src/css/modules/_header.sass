@@ -1,0 +1,47 @@
+.headerBrahim
+   width: 100%
+   height:em(100px)
+   padding: 0
+
+// Navbar
+.navbar
+	position: relative
+	top: em(-94px)
+	float: right
+	@include mediaQ(medium)
+		margin-top: em(0px)
+
+// Nav
+.nav
+  a
+    @include mediaQ(medium)
+      display: inline-block
+
+    @include mediaQ(small)
+      display: inline-block
+      position: relative
+      float: left
+      top: em(80px)
+      // left: -10%
+      margin-left: em(10px)
+      font-size: $font_size__base + 2
+
+// .nav::before
+//   content: "\2261"
+//   font-size: em(60px)
+//   color: $seaGreen
+//   @include mediaQ(medium)
+//     display: none
+
+
+.nav_item
+   @extend %nav_item__horz
+   a
+      @extend %nav_item__link
+      &:hover
+         @extend %nav_item__on
+      &:focus
+         text-decoration: none
+
+.nav_item .active
+  @extend %nav_item__on

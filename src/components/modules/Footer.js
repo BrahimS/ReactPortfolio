@@ -1,8 +1,6 @@
-/* =================
+//=================
 // Footer Component
-================= */
-
-// @flow
+//=================
 
 import React from 'react';
 
@@ -11,7 +9,7 @@ const Footer = () => {
     <section>
       <footer className="footerBrahim">
         <p className="copyRight">
-        © 2016 Your name | all right reserved
+        © 2016 Brahim Sourny | all right reserved
         </p>
       </footer>
     </section>

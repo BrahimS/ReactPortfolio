@@ -1,0 +1,67 @@
+body
+  background: $navy
+.myAppWrapper
+  height: 100%
+  background: $navy
+  font-size: $font_size__base
+  line-height: ($base_line__height / $font_size__base)
+  font-family: $font_family__primary
+  font-smoothing: antialiased
+  color: $white
+  padding-top: em(50px)
+  overflow:hidden
+  @include mediaQ(small)
+    padding: em(10px)
+
+  .content_margin
+    margin: em(80px) 0
+
+  .bio
+    p
+      font-size: em($font_size__base + 4)
+      letter-spacing: em($font_size__base/ 9)
+      font-weight: $font_weight__light
+      line-height: ($base_line__height  / $font_size__base)
+      font-family: $font_family__secondary
+      @include mediaQ(small)
+        font-size: em($font_size__base)
+      @include mediaQ(x_large)
+        font-size: em($font_size__base * 1.5)
+
+  .social_links
+    margin-left: em(-63px)
+    margin-top: em(50px)
+    @include mediaQ(small)
+      margin-left: em(-46px)
+
+  .cloud
+    @extend %cloud
+
+  .codePen
+    @extend %codepen
+
+  .twitter
+    @extend %twitter
+    background-position: left
+    background-repeat: no-repeat
+    background-size: 128px
+
+  .plane_submit
+    @extend %mail
+
+  .email
+    @extend %mail
+
+  // img
+  img
+    // margin-bottom: em(24px)
+    max-width: 100%
+    height: auto
+
+  blockquote
+    font-size: em($font_size__base+ 4)
+    font-style: italic
+    font-weight: $font_weight__light
+    margin: em(20px)
+    padding: 0 0 0 5%
+    border-left: solid em(8px) $seaGreen

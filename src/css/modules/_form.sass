@@ -1,0 +1,22 @@
+.form
+  @include e(input)
+    width: 100%
+    font-size: em(18px)
+    padding: em(20px, 18px)
+    margin-bottom: em(20px, 18px)
+    border: 1px solid $seaGreen
+    border-radius: none
+    background: transparent
+    font-weight: $font_weight__light
+    font-family: $font_family__secondary
+    &:focus
+      outline: none
+
+  @include e(btn)
+      margin: em(20px, 18px)
+      border: none
+      margin-left: 45%
+      background-color: transparent
+      @include img-replace("plane.svg", 5%, 5%, block)
+      @include mediaQ(small)
+        width: 10%

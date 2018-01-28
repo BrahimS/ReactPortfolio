@@ -1,0 +1,77 @@
+// Image replacement
+@mixin img-replace($img,$w, $h, $disp: block)
+  background-image: url('#{$path_rel}/#{$img}')
+  background-repeat: no-repeat
+  width: $w
+  height: $h
+  display: $disp
+
+// BEM Selectors
+// 1 - element
+@mixin e($element)
+  &_#{$element}
+    @content
+
+// 2 - modifier
+@mixin m($modifier)
+  &__#{$modifier}
+    @content
+
+// Adjacent sibling margins
+@mixin doubly($margin: 1em)
+  & + &
+    margin-left: $margin
+    @content
+
+// Generating :before or :after pseudo-element shapes
+@mixin p_el($el, $el_w, $el_h)
+    @if $el == "before" or $el == "after"
+  	  &:#{$el}
+    	  @extend %pseudos
+    	  width: $el_w
+      	height: $el_h
+        @content
+
+
+// Media queries
+@mixin mediaQ($break)
+  @if $break == "small"
+    @media (min-width: $brkpoint_sm) and (max-width: $brkpoint_md)
+        @content
+
+  @else if $break == "medium"
+    @media (min-width: $brkpoint_md + 1)
+      @content
+
+  @else if $break == "large"
+    @media (min-width: $brkpoint_lg)
+      @content
+
+  @else if $break == "x_large"
+    @media (min-width: $brkpoint_xlg)
+      @content
+
+  @else
+    @error "Ai! No value could be retrieved for `#{$break}` "
+
+
+// Grid columns
+@mixin g_columns
+  @for $i from 1 through $g_col_count
+    $context: g_context($g_col_width, $g_col_count ,$g_gutter_width) !global
+    $target: ($g_col_width * $i) + ($g_gutter_width * ($i - 1))
+
+    // Generate column modifier classes
+    &__#{$i}
+      width: percentage($target / $context)
+
+
+// Row
+@mixin rows($n, $margin)
+  width: ((100% - ($n - 1) * $margin)) / $n
+  &:nth-child(n)
+    margin-right:  $margin
+    margin-bottom: $margin
+
+  &:nth-child(#{$n}n)
+   margin-right: 0

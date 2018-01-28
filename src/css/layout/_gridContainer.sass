@@ -1,0 +1,14 @@
+.grid
+  @extend %clearfix
+  @extend .centered
+  width: 90%
+  display: block
+
+
+  // Make nested grid 100%
+  [class*="grid_col__"] > &
+    width: 100%
+
+  // Set max-width grid container
+  @include mediaQ(large)
+    min-width: $g_cont_max_w

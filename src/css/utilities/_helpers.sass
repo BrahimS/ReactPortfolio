@@ -1,0 +1,93 @@
+// Clearfix
+%clearfix
+  &::after
+    content: ""
+    display: table
+    clear: both
+
+// Screen reader text
+.srt
+  border: 0
+  clip: rect(0 0 0 0)
+  height: 1px
+  width: 1px
+  margin: -1px
+  overflow: hidden
+  padding: 0
+  position: absolute
+
+// Pseudo-elements
+%pseudos
+  content: ''
+  display: block
+  position: absolute
+  background: $seaGreen
+  top: 4px
+
+// Center elements
+.centered
+  float: none
+  margin-left: auto
+  margin-right: auto
+
+
+.txt_centerd
+  @extend %center_align
+
+// Center alignment
+%center_align
+  text-align: center
+
+// Margin left
+.marginL
+  margin-left: 2%
+
+// Subtitle
+.sub_title
+  font-size: $font_size__base
+  font-family: Arial, sans-serif
+  letter-spacing: em(1.5px)
+  color: $glaucous
+  @include mediaQ(small)
+    font-size: $font_size__base - 4
+
+.para_grid_singlePage
+  font-size: $font_size__base - 2
+  font-weight: $font_weight__thin
+  font-family: $font_family__third
+  float: left
+
+.para_intro
+  margin-top: em(115.2px)
+
+// classes for contact form
+.disp_none
+  display: none
+
+.disp_true__success
+  display: block
+  padding: em(20px)
+  background: $seaGreen
+  color: $navy
+  width: 25%
+  @include mediaQ(small)
+    width: 100%
+    text-align: center
+
+  @include mediaQ(medium)
+    width: 100%
+    text-align: center
+
+.disp_true__fail
+  display: block
+  padding: em(20px)
+  background: red
+  color: $navy
+  width: 25%
+  @include mediaQ(small)
+    width: 100%
+    text-align: center
+
+  @include mediaQ(medium)
+    width: 100%
+    text-align: center

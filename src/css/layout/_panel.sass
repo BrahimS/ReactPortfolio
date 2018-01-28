@@ -1,0 +1,11 @@
+.panel
+  @extend %panel_default
+  @include m(centered)
+      @extend %panel_default
+      @extend %center_align
+
+  @include m(padded)
+    @extend %panel_padding
+    @include m(centered)
+      @extend %center_align
+      @extend %panel_padding

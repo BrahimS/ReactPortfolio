@@ -1,18 +1,20 @@
-/* =================
- App Components
-================= */
+//=================
+// App Components
+//=================
+import React from 'react';
 
-// @flow
-import React from "react";
-import Header from "./modules/Header";
+
+// Custom Components
+import Header from './modules/Header';
+
 
 class App extends React.Component {
   render() {
     return (
-      <section className="grid container">
-        <Header />
-        {this.props.children}
-      </section>
+        <section className="grid container">
+          <Header />
+          { this.props.children }
+        </section>
     );
   }
 }

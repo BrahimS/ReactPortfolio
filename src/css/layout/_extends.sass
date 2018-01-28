@@ -1,0 +1,120 @@
+// Headlines
+%hdln_prim
+  font-size: em(60px)
+  font-weight: $font_weight__bold
+  line-height: ($base_line__height / $font_size__base)
+  font-family: $font_family__primary
+  color: $seaGreen
+  margin: 0
+  padding: 0
+  @include mediaQ(small)
+    font-size: em(60px / 2)
+  @include mediaQ(x_large)
+    font-size: em(80px)
+
+%hdln_sec
+  font-size: em(30px)
+  font-weight: $font_weight__light
+  line-height: ($base_line__height / $font_size__base)
+  font-family: $font_family__primary
+  color: $seaGreen
+  // margin: 0
+  padding: 0
+
+%headline_xlagre__centered
+  font-size: em(100px)
+  font-weight: $font_weight__light
+  line-height: ($base_line__height / $font_size__base)
+  font-family: $font_family__primary
+  color: $glaucous
+  text-align: center
+  margin-top: 20%
+
+// Panels
+%panel_default
+  padding-top: em(30px)
+  @include mediaQ(medium)
+    padding-bottom: em(20px)
+
+%panel_padding
+  padding-top: em(34px)
+  @include mediaQ(medium)
+    padding-top: em(80px)
+    padding-bottom: em(34px)
+
+// Icons social links
+%cloud
+  background-color: transparent
+  @include img-replace("downloadIcon.svg", em(30px), em(30px), inline-block)
+
+%codepen
+  background-color: transparent
+  @include img-replace("codepen.svg",em(25px), em(30px), inline-block)
+
+%twitter
+  background-color: transparent
+  @include img-replace("twitter.png", em(30px), em(30px), inline-block)
+
+%mail
+  background-color: transparent
+  background-size: contain
+  @include img-replace("email.svg", em(26px), em(27px), inline-block)
+
+// thumbnail for project grid
+%thumb1
+  @include img-replace("thumb1.png", em(266px), em(400px), block)
+
+
+%thumb2
+  @include img-replace("thumb2.png", em(266px), em(400px), block)
+
+%thumb3
+  @include img-replace("thumb3.png", em(266px), em(400px), block)
+
+%project_btn
+  @include img-replace("projectBtn.svg", em(92px), em(112px), block)
+
+// Hero image for single page project
+%hero1
+  @include img-replace("hero1.png", em(960px), em(628px), block)
+  @include mediaQ(small)
+    @include img-replace("imageProject1_mobile.png", em(300px), em(195px), block)
+
+// image project
+%imageProject1
+  @include img-replace("imageProject1.png", em(510px), em(400px), block)
+
+
+%imageProject2
+  @include img-replace("paysagisteLogo.svg", em(400px), em(200px), block)
+
+
+%imageProject3
+  @include img-replace("imageProject2.png", em(960px), em(628px), block)
+  @include mediaQ(small)
+    @include img-replace("imageProject2_mobile.png", em(300px), em(171px), block)
+
+%arrow
+  @include img-replace("arrows.svg", em(35px), em(35px), inline-block)
+
+// main Navigation
+%nav_item__horz
+  @include mediaQ(medium)
+    display: inline-block
+    margin: 0 em(12px)
+
+
+%nav_item__link
+  margin-top: em(3px)
+  display: inline-block
+  font-size: em($font_size__base * 1.5)
+  font-weight: $font_weight__bold
+  color: $seaGreen
+  // padding: em(8px, 18px)
+  text-decoration: none
+  color: $seaGreen
+  @include mediaQ(small)
+    text-align: center
+
+%nav_item__on
+  color: $gamboge

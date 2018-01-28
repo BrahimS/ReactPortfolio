@@ -1,0 +1,136 @@
+// Fade In
+.fade_in
+  animation: fadeIn 2s ease-in-out
+  transition: .5s
+
+  @keyframes fadeIn
+    0%
+      opacity: 0
+    100%
+      opacity: 1
+
+// Stroke offset
+.stroke_offset
+  // @include img-replace("logoBrahim.svg", 10%, 10%, inline-block)
+  fill: $seaGreen
+  stroke: $navy
+  width: 18%
+  stroke-dasharray: 1
+  stroke-dashoffset: 2
+  animation: offSet 1s linear infinite
+
+  @keyframes offSet
+    100%
+      stroke-dashoffset: 0
+
+// Background transition
+.bg_transition
+  animation: bgTransition 2s ease-in-out both
+
+  @keyframes bgTransition
+    0%
+      background: $seaGreen
+    90%
+      background: $navy
+    100%
+      background: $navy
+
+// Slide Up
+.slide_up
+  animation: slideUp 1s ease-in-out both
+
+  @keyframes slideUp
+    0%
+      opacity: 0
+      transform: translate3d(0, 15%, 0)
+
+    100%
+      opacity: 1
+      transform: translate3d(0, 0, 0)
+
+// Slide down
+.slide_down
+  animation: slideUp 8s ease-in-out forwards reverse
+
+// Rotation
+.rotate
+  animation: rotation 8s linear both infinite
+
+  @keyframes rotation
+    100%
+      transform: rotate(360deg)
+
+// Flying bird
+.twitter_fly
+  animation: flyBird 0.8s steps(3) infinite, movBird 2s ease-out both
+
+.zoom
+  outline: none
+  &:hover
+    animation: Zoom .2s ease-in-out reverse
+
+.rocket
+  &:focus
+    animation: Rocket .2s ease-in
+
+
+@keyframes flyBird
+  0%
+    background-position: left
+  100%
+    background-position: right
+
+// animation for the bird
+@keyframes movBird
+  0%
+    transform: translate3d(-400px,400px,0)
+
+  100%
+    transform: translate3d(0,0,0)
+
+// scale
+@keyframes Zoom
+  0%
+    transform: scale(1)
+  20%
+    transform: scale(1.1)
+  100%
+    transform: scale(1)
+
+@keyframes Rocket
+  0%
+    opacity: 1
+    transform: translate(0, 0)
+  100%
+    opacity: 0
+    transform: translate(600px, -400px)
+
+
+
+
+// // React CC Transition Group Classes
+//
+// /* Start enter state */
+// .slide-enter
+//   transform: translateY(-100%)
+//
+// /* End enter state */
+// .slide-enter.slide-enter-active
+//   transform: translateY(0)
+//   transition: transform 5s ease-out
+//
+// /* start leave state */
+// .slide-leave
+//   transform: translateY(0)
+//
+// /* end leave state */
+// .slide-leave.slide-leave-active
+//   transform: translateY(-100%)
+//   opacity: 0
+//   transition: 0.5s ease-in
+//
+// /* initial mounting */
+// .slide-appear
+//   animation: slideUp .8s ease-in-out
+//
+// .slide-appear.slide-appear-active

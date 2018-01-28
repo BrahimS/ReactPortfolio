@@ -1,0 +1,24 @@
+%col
+  float: left
+  padding: 0 10px
+  margin-left: 2%
+
+// Calculate grid columns
+.grid_col
+  @include mediaQ(medium)
+    @include g_columns
+
+
+// Column styles
+[class^="grid_coll__"]
+  @include mediaQ(small)
+    margin-top: em(12px)
+    margin-bottom: em(12px)
+
+  @include mediaQ(medium)
+    @include doubly(percentage($g_gutter_width / $context))
+    float: left
+    min-height: 1px
+    padding-left: 10px
+    &:last-of-type
+      float: right

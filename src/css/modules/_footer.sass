@@ -1,0 +1,19 @@
+.footerBrahim
+  position: relative
+  display: inline-block
+  float: left
+  font-family: $font_family__third
+  width: 100%
+  height: em(60px)
+
+  @include mediaQ(small)
+    position: absolute
+    bottom: em(0px)
+
+  .copyRight
+    position: absolute
+    bottom: em(0px)
+    color: $glaucous
+    font-size: $font_size__base - 2
+    @include mediaQ(small)
+      display: none

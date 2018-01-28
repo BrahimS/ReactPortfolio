@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-102.43 41.488 31.93 22.012">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(0,0,0,0);
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #a0e4b5;
+        stroke-width: 4px;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="groupe-15" transform="translate(-395 -7)">
+    <g id="groupe-1" transform="translate(254.07 19.988)">
+      <path id="segment-1" class="cls-1" d="M0,0H31.93" transform="translate(38.5 30.5)"/>
+      <path id="segment-1-2" data-name="segment-1" class="cls-2" d="M0,0H31.93" transform="translate(38.5 39.506)"/>
+      <line id="segment-1-3" data-name="segment-1" class="cls-2" x2="31.93" transform="translate(38.5 48.512)"/>
+    </g>
+  </g>
+</svg>
