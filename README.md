@@ -2,11 +2,12 @@
 This is a customizable portfolio website. it's made using technologies like :
 * Reactjs
 * React-router
-* Webpack (based on react-create-app configuration)
+* Webpack
 * Babel
-* Flow
+* Eslint
 * ES6
-* CSS
+* sass
+* pug
 * Responsive web design
 
  Please have a look at the code and feel free to modify it or use it if you wish.
