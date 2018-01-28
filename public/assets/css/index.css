@@ -89,8 +89,9 @@
   fill: #a0e4b5;
   stroke: #000083;
   width: 18%;
-  stroke-dasharray: 1;
-  stroke-dashoffset: 2;
+  stroke-dasharray: 3;
+  stroke-dashoffset: 6;
+  margin-left: -3.375em;
   animation: offSet 1s linear infinite; }
 
 @keyframes offSet {
@@ -777,8 +778,6 @@ body {
   font-weight: 300;
   font-family: "Open Sans", "Arial", sans-serif;
   border: solid 4px #a0e4b5; }
-  .project_grid:hover {
-    animation: Zoom .3s ease-in-out; }
 
 .project_btn {
   position: relative;
@@ -807,8 +806,6 @@ body {
   font-weight: 300;
   font-family: "Open Sans", "Arial", sans-serif;
   border: solid 4px #a0e4b5; }
-  .project_grid2:hover {
-    animation: Zoom .3s ease-in-out; }
 
 .project_grid3 {
   background-color: #6588b2;
@@ -817,8 +814,6 @@ body {
   font-weight: 300;
   font-family: "Open Sans", "Arial", sans-serif;
   border: solid 4px #a0e4b5; }
-  .project_grid3:hover {
-    animation: Zoom .3s ease-in-out; }
 
 .wrapper {
   margin-top: 7.2em; }

@@ -23,7 +23,7 @@ const Routes = (
     <Route component={App}>
       <Route path="/" component={About} />
       <Route path="projects" component={Projects} />
-        <Route path="Paysagiste" component={SpContainer} Hline="Paysagiste" data={SpContent.Paysagiste} />
+        <Route path="Paysagiste" component={SpContainer} Hline="Project One" data={SpContent.Projectone} />
         <Route path="Reb" component={AvalaibleSoon} title="Soon" txt="The page will be available soon" />
         <Route path="Yogin" component={AvalaibleSoon} title="Soon" txt="The page will be available soon" />
       <Route path="*" component={NotFound} title="404" txt="Sorry, the page is not found"/>

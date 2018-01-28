@@ -16,9 +16,9 @@ class About extends React.Component {
   constructor() {
     super();
     this.state = {
-      title: "Brahim Sourny",
-      subTitle: "Designer and front-end developer",
-        description: "I exercise my creativity on different media. I love to produce websites that are nicely coded with an elegant design, original and above all effective. It is important for me to provide users with accessible and ergonomic interfaces. With significant experience in the field of web design and development, and with a diverse experience and the ability to adapt to different surrounding environment. Today I wish to integrate a team to help achieve important projects with new challenges.",
+      title: "Your Name",
+      subTitle: "UI/UX / Front-end developer",
+        description: "Lorem ipsum It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose...",
     }
   }
   render() {

@@ -11,8 +11,7 @@ class Projects extends React.Component {
       <div className="wrapper slide_up">
         <section className="project_intro bio ">
           <p className="para_intro">
-            As a freelancer, I had the chance to work for different companies. <br />During these years of experience, I enjoyed working with small businesses, which allowed me to combine the process
-            of research, creation and development.
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
           </p>
         </section>
 
