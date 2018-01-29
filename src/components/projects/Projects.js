@@ -19,7 +19,7 @@ class Projects extends React.Component {
           <div className="grid_col__4 row ">
             <article className="project_grid">
               <div className="project_image">
-                <h2 className="">Paysagiste</h2>
+                <h2 className="">Project One</h2>
                 <span className="porject_type "> Conception, branding, design and front-end develepement</span>
                 <NLink to="Paysagiste">
                   <div className="project_btn">
@@ -36,7 +36,7 @@ class Projects extends React.Component {
         <div className="grid_col__4 row ">
           <article className="project_grid2">
             <div className="project_image">
-              <h2 className="">Rêve en blanc</h2>
+              <h2 className="">Project Two</h2>
               <span className="porject_type "> Conception, web design and front-end develepement</span>
               <NLink to="Reb">
                 <div className="project_btn">
@@ -53,7 +53,7 @@ class Projects extends React.Component {
       <div className="grid_col__4 row ">
         <article className="project_grid3">
           <div className="project_image">
-            <h2 className="">Yogin</h2>
+            <h2 className="">Project Three</h2>
             <span className="porject_type "> Conception, branding, design and front-end develepement</span>
             <NLink to="Yogin">
               <div className="project_btn">
